@@ -243,7 +243,7 @@ section { padding: 64px 0; }
   .categoria.expanded .poster-item { width: calc(33.333% - 10px); }
 }
 @media (max-width: 560px) {
-  .categoria.expanded .poster-item { width: calc(50% - 7px); }
+  .categoria.expanded .poster-item { width: calc(25% - 6px); }
 }
 
 .poster-item img {
@@ -332,17 +332,6 @@ section { padding: 64px 0; }
 .persona-rol { color: var(--gris-texto); font-size: 0.94rem; }
 .persona-rol em { color: var(--negro); }
 
-/* ---------- Colaboradores ---------- */
-.colaborador-card {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  flex-wrap: wrap;
-}
-.colaborador-logo { width: 260px; max-width: 100%; }
-.colaborador-card p { color: var(--gris-texto); max-width: 640px; margin: 0; }
-.colaborador-card p em { color: var(--negro); }
-
 /* ---------- Contacto ---------- */
 .contacto p { margin: 10px 0; color: var(--gris-texto); }
 .contacto a:hover { color: var(--negro); text-decoration: underline; }
@@ -406,4 +395,9 @@ section { padding: 64px 0; }
   .has-dropdown.open .dropdown { display: block; }
   section { padding: 44px 0; }
   .poster-item { width: 160px; }
+}
+
+@media (max-width: 560px) {
+  .carousel { gap: 8px; }
+  .poster-item { width: 82px; }
 }
