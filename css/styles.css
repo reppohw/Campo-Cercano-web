@@ -399,5 +399,5 @@ section { padding: 64px 0; }
 
 @media (max-width: 560px) {
   .carousel { gap: 8px; }
-  .poster-item { width: 82px; }
+  .poster-item { width: 108px; }
 }
