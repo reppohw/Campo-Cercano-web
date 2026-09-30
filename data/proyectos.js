@@ -140,9 +140,9 @@ const PROYECTOS = {
     { titulo: "Extinction", imagen: "assets/img/proyectos/dialogos/extinction.jpg" },
   ],
   efectos: [
+    { titulo: "La bola negra", imagen: "assets/img/proyectos/efectos/la-bola-negra.jpg" },
     { titulo: "La sociedad de la nieve", imagen: "assets/img/proyectos/efectos/la-sociedad-de-la-nieve.jpg" },
     { titulo: "Senna", imagen: "assets/img/proyectos/efectos/senna.jpg" },
-    { titulo: "La bola negra", imagen: "assets/img/proyectos/efectos/la-bola-negra.jpg" },
     { titulo: "El problema final", imagen: "assets/img/proyectos/efectos/el-problema-final.jpg" },
     { titulo: "ZETA", imagen: "assets/img/proyectos/efectos/zeta.jpg" },
     { titulo: "La llum de Aisha", imagen: "assets/img/proyectos/efectos/la-llum-de-aisha.jpg" },
