@@ -243,7 +243,7 @@ section { padding: 64px 0; }
   .categoria.expanded .poster-item { width: calc(33.333% - 10px); }
 }
 @media (max-width: 560px) {
-  .categoria.expanded .poster-item { width: calc(25% - 6px); }
+  .categoria.expanded .poster-item { width: calc(50% - 7px); }
 }
 
 .poster-item img {
