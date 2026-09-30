@@ -98,11 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------- Flechas de los carruseles (proyectos e instalaciones) ----------
   document.querySelectorAll(".carousel-arrow").forEach((arrow) => {
+    const direction = arrow.classList.contains("carousel-arrow-prev") ? -1 : 1;
     arrow.addEventListener("click", () => {
       const wrap = arrow.closest(".carousel-wrap");
       const track = wrap ? wrap.querySelector(".carousel") : null;
       if (!track) return;
-      const amount = Math.min(track.clientWidth * 0.9, 700);
+      const amount = Math.min(track.clientWidth * 0.9, 700) * direction;
       track.scrollBy({ left: amount, behavior: "smooth" });
     });
   });
