@@ -62,7 +62,8 @@
       "a supervising sound editor on films such as <em>Mamántula</em> and <em>El color del cielo</em>, " +
       "both selected for the San Sebastián Film Festival. Internationally, his work on Bollywood films " +
       "such as <em>A Gentleman</em> and the acclaimed Indian series <em>The Family Man</em> stands out.",
-    "contact.title": "Contact"
+    "contact.title": "Contact",
+    "footer.presskit": "Press kit"
   };
 
   // ---- Textos que genera main.js (en los dos idiomas) ----
