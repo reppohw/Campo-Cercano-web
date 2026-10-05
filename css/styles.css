@@ -9,7 +9,7 @@
   --negro: #111111;
   --blanco: #ffffff;
   --gris-borde: #e4e4e4;
-  --gris-texto: #4a4a4a;
+  --gris-texto: #111111;
   --gris-claro: #8a8a8a;
   --amarillo: #f4e04d;
   --max-width: 1180px;
@@ -534,3 +534,7 @@ body.no-scroll { overflow: hidden; }
   letter-spacing: 0.08em;
   font-size: 0.78rem;
 }
+
+/* ---------- Nombre en la barra: imagen del logotipo ---------- */
+.logo-wordmark { display: block; height: 20px; width: auto; }
+@media (max-width: 860px) { .logo-wordmark { height: 16px; } }
