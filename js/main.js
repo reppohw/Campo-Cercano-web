@@ -52,14 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let lbIndex = 0;
   let lbReturnFocus = null;
 
-  function imdbUrl(item, caption) {
+  function imdbUrl(item) {
     // En data/proyectos.js se puede añadir  imdb: "tt1234567"  (o una URL completa)
-    // a cualquier proyecto para enlazar directamente a su ficha.
-    // Si no hay, se enlaza a la búsqueda del título en IMDb.
-    if (item.imdb) {
-      return /^https?:\/\//.test(item.imdb) ? item.imdb : `https://www.imdb.com/title/${item.imdb}/`;
-    }
-    return `https://www.imdb.com/find/?s=tt&q=${encodeURIComponent(caption)}`;
+    // a cualquier proyecto para que su visor muestre un botón a su ficha de IMDb.
+    // Los proyectos sin ese dato no muestran ningún botón.
+    return /^https?:\/\//.test(item.imdb) ? item.imdb : `https://www.imdb.com/title/${item.imdb}/`;
   }
 
   function renderLightbox() {
@@ -75,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxImg.alt = caption;
     lightboxCaption.textContent = caption;
 
-    if (item.imdbLink && caption) {
-      lightboxImdb.href = imdbUrl(item, caption);
-      lightboxImdb.textContent = item.imdb ? t("lb.imdbView") : t("lb.imdbSearch");
+    if (item.imdbLink && item.imdb) {
+      lightboxImdb.href = imdbUrl(item);
+      lightboxImdb.textContent = t("lb.imdbView");
       lightboxImdb.hidden = false;
     } else {
       lightboxImdb.hidden = true;
