@@ -9,7 +9,7 @@
   --negro: #111111;
   --blanco: #ffffff;
   --gris-borde: #e4e4e4;
-  --gris-texto: #111111;
+  --gris-texto: #4a4a4a;
   --gris-claro: #8a8a8a;
   --amarillo: #f4e04d;
   --max-width: 1180px;
@@ -511,4 +511,26 @@ body.no-scroll { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html, .carousel { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+/* ---------- Tipografía de la barra superior (Jost, a juego con el logo) ---------- */
+:root { --font-nav: "Jost", "Century Gothic", "Segoe UI", Arial, sans-serif; }
+.logo-name {
+  font-family: var(--font-nav);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.main-nav > ul > li > a,
+.dropdown li a {
+  font-family: var(--font-nav);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+.main-nav > ul > li > a { font-size: 0.85rem; }
+.dropdown li a { font-size: 0.82rem; }
+.lang-switch {
+  font-family: var(--font-nav);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
 }
