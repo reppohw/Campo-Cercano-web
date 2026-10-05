@@ -5,13 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Campo Cercano | Posproducción de sonido | Madrid</title>
 <meta name="description" content="Estudio de posproducción de sonido de Maiki Calvo, Jorge Alarcón y Brendan Golden. Supervisión, diálogos y efectos para cine y televisión en Madrid.">
-<link rel="icon" href="assets/img/equipo/logo.png" type="image/png">
+<link rel="canonical" href="https://campocercano.es/">
+
+<!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn, correo...) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Campo Cercano">
+<meta property="og:title" content="Campo Cercano | Posproducción de sonido | Madrid">
+<meta property="og:description" content="Estudio de posproducción de sonido de Maiki Calvo, Jorge Alarcón y Brendan Golden. Supervisión, diálogos y efectos para cine y televisión en Madrid.">
+<meta property="og:url" content="https://campocercano.es/">
+<meta property="og:image" content="https://campocercano.es/assets/img/instalaciones/instalacion-02.jpg">
+<meta property="og:image:width" content="900">
+<meta property="og:image:height" content="600">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Campo Cercano",
+  "url": "https://campocercano.es/",
+  "logo": "https://campocercano.es/assets/img/equipo/logo.png",
+  "email": "info@campocercano.es",
+  "description": "Estudio de posproducción de sonido en Madrid: supervisión, diálogos y efectos para cine y televisión.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle María Teresa, 14",
+    "postalCode": "28028",
+    "addressLocality": "Madrid",
+    "addressCountry": "ES"
+  },
+  "sameAs": ["https://www.instagram.com/campocercano"],
+  "member": [
+    { "@type": "Person", "name": "Maiki Calvo", "sameAs": "https://www.imdb.com/name/nm3131556/" },
+    { "@type": "Person", "name": "Jorge Alarcón", "sameAs": "https://www.imdb.com/name/nm4421279/" },
+    { "@type": "Person", "name": "Brendan Golden", "sameAs": "https://www.imdb.com/name/nm5666648/" }
+  ]
+}
+</script>
 </head>
 <body>
+
+<a class="skip-link" href="#proyectos" data-i18n="a11y.skip">Saltar al contenido</a>
 
 <header class="site-header" id="inicio">
   <div class="header-inner">
@@ -19,26 +65,31 @@
       <span class="logo-name">CAMPO CERCANO</span>
     </a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-aria="nav.openMenu" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
     </button>
 
     <nav class="main-nav" id="mainNav">
       <ul>
         <li class="has-dropdown">
-          <a href="#proyectos">Proyectos</a>
+          <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
           <ul class="dropdown">
-            <li><a href="#proyectos" data-tab="supervision">Supervisión</a></li>
-            <li><a href="#proyectos" data-tab="dialogos">Diálogos</a></li>
-            <li><a href="#proyectos" data-tab="efectos">Efectos</a></li>
+            <li><a href="#proyectos" data-tab="supervision" data-i18n="nav.supervision">Supervisión</a></li>
+            <li><a href="#proyectos" data-tab="dialogos" data-i18n="nav.dialogues">Diálogos</a></li>
+            <li><a href="#proyectos" data-tab="efectos" data-i18n="nav.effects">Efectos</a></li>
           </ul>
         </li>
-        <li><a href="#instalaciones">Instalaciones</a></li>
-        <li><a href="#quienes-somos">Quiénes somos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#instalaciones" data-i18n="nav.facilities">Instalaciones</a></li>
+        <li><a href="#quienes-somos" data-i18n="nav.about">Quiénes somos</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
       </ul>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="true" lang="es">ES</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
       <a class="instagram-link" href="https://www.instagram.com/campocercano" target="_blank" rel="noopener" aria-label="Instagram @campocercano">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
       </a>
     </nav>
   </div>
@@ -47,60 +98,59 @@
 <main>
 
   <section class="hero">
+    <h1 class="visually-hidden" data-i18n="seo.h1">Campo Cercano — estudio de posproducción de sonido en Madrid</h1>
     <div class="container hero-inner">
-      <img src="assets/img/equipo/logo.png" alt="Campo Cercano" class="hero-logo">
+      <img src="assets/img/equipo/logo.png" alt="Campo Cercano" class="hero-logo" width="2835" height="2575">
     </div>
   </section>
 
   <section class="intro">
     <div class="container">
-      <p class="intro-text">
-        CAMPO CERCANO es el estudio de sonido de Maiki Calvo, Jorge Alarcón y Brendan
+      <p class="intro-text" data-i18n="intro">CAMPO CERCANO es el estudio de sonido de Maiki Calvo, Jorge Alarcón y Brendan
         Golden, tres freelancers que, tras muchos años trabajando juntos en diferentes proyectos, han
         decidido unirse para afianzarse como posproductores independientes. CAMPO CERCANO es su manera de
         crecer y consolidarse desde su especialización en el montaje de efectos y diálogos. En su estudio
-        en el centro de Madrid cuentan con varias salas de edición, premezcla ATMOS y grabación de ADR.
-      </p>
+        en el centro de Madrid cuentan con varias salas de edición, premezcla ATMOS y grabación de ADR.</p>
     </div>
   </section>
 
   <section class="proyectos" id="proyectos">
     <div class="container">
-      <h1 class="section-title">Proyectos</h1>
+      <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
 
       <div class="categoria" data-categoria="supervision">
         <div class="categoria-head">
-          <h2>Supervisión</h2>
-          <button class="toggle-btn" data-target="supervision" aria-label="Ver todos">+</button>
+          <h3 data-i18n="cat.supervision">Supervisión</h3>
+          <button class="toggle-btn" data-target="supervision" aria-label="Ver todos" aria-expanded="false">+</button>
         </div>
         <div class="carousel-wrap">
-          <button class="carousel-arrow carousel-arrow-prev" data-target="supervision" aria-label="Retroceder">&#10094;</button>
+          <button class="carousel-arrow carousel-arrow-prev" data-target="supervision" aria-label="Retroceder" data-i18n-aria="arrow.prev">&#10094;</button>
           <div class="carousel" id="grid-supervision"></div>
-          <button class="carousel-arrow carousel-arrow-next" data-target="supervision" aria-label="Avanzar">&#10095;</button>
+          <button class="carousel-arrow carousel-arrow-next" data-target="supervision" aria-label="Avanzar" data-i18n-aria="arrow.next">&#10095;</button>
         </div>
       </div>
 
       <div class="categoria" data-categoria="dialogos">
         <div class="categoria-head">
-          <h2>Diálogos</h2>
-          <button class="toggle-btn" data-target="dialogos" aria-label="Ver todos">+</button>
+          <h3 data-i18n="cat.dialogues">Diálogos</h3>
+          <button class="toggle-btn" data-target="dialogos" aria-label="Ver todos" aria-expanded="false">+</button>
         </div>
         <div class="carousel-wrap">
-          <button class="carousel-arrow carousel-arrow-prev" data-target="dialogos" aria-label="Retroceder">&#10094;</button>
+          <button class="carousel-arrow carousel-arrow-prev" data-target="dialogos" aria-label="Retroceder" data-i18n-aria="arrow.prev">&#10094;</button>
           <div class="carousel" id="grid-dialogos"></div>
-          <button class="carousel-arrow carousel-arrow-next" data-target="dialogos" aria-label="Avanzar">&#10095;</button>
+          <button class="carousel-arrow carousel-arrow-next" data-target="dialogos" aria-label="Avanzar" data-i18n-aria="arrow.next">&#10095;</button>
         </div>
       </div>
 
       <div class="categoria" data-categoria="efectos">
         <div class="categoria-head">
-          <h2>Efectos</h2>
-          <button class="toggle-btn" data-target="efectos" aria-label="Ver todos">+</button>
+          <h3 data-i18n="cat.effects">Efectos</h3>
+          <button class="toggle-btn" data-target="efectos" aria-label="Ver todos" aria-expanded="false">+</button>
         </div>
         <div class="carousel-wrap">
-          <button class="carousel-arrow carousel-arrow-prev" data-target="efectos" aria-label="Retroceder">&#10094;</button>
+          <button class="carousel-arrow carousel-arrow-prev" data-target="efectos" aria-label="Retroceder" data-i18n-aria="arrow.prev">&#10094;</button>
           <div class="carousel" id="grid-efectos"></div>
-          <button class="carousel-arrow carousel-arrow-next" data-target="efectos" aria-label="Avanzar">&#10095;</button>
+          <button class="carousel-arrow carousel-arrow-next" data-target="efectos" aria-label="Avanzar" data-i18n-aria="arrow.next">&#10095;</button>
         </div>
       </div>
     </div>
@@ -108,37 +158,37 @@
 
   <section class="instalaciones" id="instalaciones">
     <div class="container">
-      <h1 class="section-title">Instalaciones</h1>
+      <h2 class="section-title" data-i18n="facilities.title">Instalaciones</h2>
       <div class="carousel-wrap">
-        <button class="carousel-arrow carousel-arrow-prev" data-target="instalaciones" aria-label="Retroceder">&#10094;</button>
+        <button class="carousel-arrow carousel-arrow-prev" data-target="instalaciones" aria-label="Retroceder" data-i18n-aria="arrow.prev">&#10094;</button>
         <div class="carousel carousel-fotos" id="instalacionesGrid"></div>
-        <button class="carousel-arrow carousel-arrow-next" data-target="instalaciones" aria-label="Avanzar">&#10095;</button>
+        <button class="carousel-arrow carousel-arrow-next" data-target="instalaciones" aria-label="Avanzar" data-i18n-aria="arrow.next">&#10095;</button>
       </div>
     </div>
   </section>
 
   <section class="equipo" id="quienes-somos">
     <div class="container">
-      <h1 class="section-title">Quienes somos</h1>
+      <h2 class="section-title" data-i18n="about.title">Quiénes somos</h2>
       <div class="equipo-grid">
 
         <article class="persona">
-          <img src="assets/img/equipo/maiki-calvo.jpg" alt="Maiki Calvo" class="persona-foto">
-          <h3>Maiki Calvo <a class="imdb-pill" href="https://www.imdb.com/name/nm3131556/" target="_blank" rel="noopener">IMDb</a></h3>
-          <p class="persona-rol">Maiki Calvo, con más de quince años de experiencia en el sector, ha
+          <img src="assets/img/equipo/maiki-calvo.jpg" alt="Maiki Calvo" class="persona-foto" loading="lazy">
+          <h3>Maiki Calvo <a class="imdb-pill" href="https://www.imdb.com/name/nm3131556/" target="_blank" rel="noopener" aria-label="Maiki Calvo en IMDb">IMDb</a></h3>
+          <p class="persona-rol" data-i18n="bio.maiki">Maiki Calvo, con más de quince años de experiencia en el sector, ha
             supervisado películas como <em>Tiempo después</em>, <em>All Dirt Roads Taste of Salt</em>
             (nominada en el Festival de Sundance) o <em>Costa da morte</em> (galardonada en el Festival
             Internacional de Locarno) así como la reciente serie <em>Poquita fe</em>. Alterna su carrera
             de supervisor con la de editor de efectos para otros estudios, donde destaca su trabajo en
-            <em>El desconocido</em> (Goya al mejor sonido en 2015), <em>Justin and the knights of
-            valour</em> y series como <em>La Linea invisible</em> o <em>Cuatro estaciones en La
+            <em>El desconocido</em> (Goya al mejor sonido en 2015), <em>Justin and the Knights of
+            Valour</em> y series como <em>La línea invisible</em> o <em>Cuatro estaciones en La
             Habana</em>.</p>
         </article>
 
         <article class="persona">
-          <img src="assets/img/equipo/jorge-alarcon.jpg" alt="Jorge Alarcón" class="persona-foto">
-          <h3>Jorge Alarcón <a class="imdb-pill" href="https://www.imdb.com/name/nm4421279/" target="_blank" rel="noopener">IMDb</a></h3>
-          <p class="persona-rol">Jorge Alarcón, editor de diálogos en series destacadas como <em>Élite</em>,
+          <img src="assets/img/equipo/jorge-alarcon.jpg" alt="Jorge Alarcón" class="persona-foto" loading="lazy">
+          <h3>Jorge Alarcón <a class="imdb-pill" href="https://www.imdb.com/name/nm4421279/" target="_blank" rel="noopener" aria-label="Jorge Alarcón en IMDb">IMDb</a></h3>
+          <p class="persona-rol" data-i18n="bio.jorge">Jorge Alarcón, editor de diálogos en series destacadas como <em>Élite</em>,
             <em>Apagón</em> y <em>Senna</em>. También ha trabajado en películas galardonadas como <em>La
             sociedad de la nieve</em>, <em>20.000 especies de abejas</em> y <em>La infiltrada</em>.
             Actualmente colabora con Joakim Sundström supervisando los diálogos de proyectos entre los que
@@ -148,9 +198,9 @@
         </article>
 
         <article class="persona">
-          <img src="assets/img/equipo/brendan-golden.jpg" alt="Brendan Golden" class="persona-foto">
-          <h3>Brendan golden <a class="imdb-pill" href="https://www.imdb.com/name/nm5666648/" target="_blank" rel="noopener">IMDb</a></h3>
-          <p class="persona-rol">Brendan Golden ha trabajado como diseñador sonoro y editor de efectos en
+          <img src="assets/img/equipo/brendan-golden.jpg" alt="Brendan Golden" class="persona-foto" loading="lazy">
+          <h3>Brendan Golden <a class="imdb-pill" href="https://www.imdb.com/name/nm5666648/" target="_blank" rel="noopener" aria-label="Brendan Golden en IMDb">IMDb</a></h3>
+          <p class="persona-rol" data-i18n="bio.brendan">Brendan Golden ha trabajado como diseñador sonoro y editor de efectos en
             películas como <em>La sociedad de la nieve</em> (por la que ganó un MPSE Golden Reel Award),
             <em>Cerrar los ojos</em>, <em>Apocalipsis Z</em> o <em>Bird Box Barcelona</em>, y en series
             como <em>La Ruta</em>, <em>Apagón</em>, <em>Senna</em>, <em>Marbella</em> o <em>Machos
@@ -166,11 +216,11 @@
 
   <section class="contacto" id="contacto">
     <div class="container">
-      <h1 class="section-title">Contacto</h1>
+      <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
       <p>Calle María Teresa, 14, 28028, Madrid.</p>
       <p><a href="mailto:info@campocercano.es">info@campocercano.es</a></p>
       <p class="contacto-instagram">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
         <a href="https://www.instagram.com/campocercano" target="_blank" rel="noopener">@campocercano</a>
       </p>
     </div>
@@ -184,14 +234,21 @@
   </div>
 </footer>
 
-<!-- Lightbox para ver posters/fotos en grande -->
-<div class="lightbox" id="lightbox">
+<!-- Visor para ver posters/fotos en grande -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
   <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#10094;</button>
   <img src="" alt="" id="lightboxImg">
   <p id="lightboxCaption"></p>
+  <div class="lightbox-meta">
+    <a id="lightboxImdb" href="#" target="_blank" rel="noopener" hidden></a>
+    <span class="lightbox-count" id="lightboxCount" aria-live="polite"></span>
+  </div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Siguiente">&#10095;</button>
 </div>
 
 <script src="data/proyectos.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
